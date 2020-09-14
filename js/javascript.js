@@ -16,11 +16,20 @@ $(document).ready(function(){
     $('.nav_btn').on('click',function(){
         $('.nav_btn').removeClass('active');
         $(this).addClass('active');
+        $('.side-drawer').slideUp();
+        $('.hamburger-menu').removeClass("change");
     });
 });
 
 
 //index.html
+$(document).ready(function(){
+    $('.hamburger-menu').on('click',function(){
+        $('.side-drawer').slideToggle();
+    });
+});
+
+//for hamburger menu and sidenav
 function menuClicked(x) {
     x.classList.toggle("change");
 }
