@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Van Hudson Galvoso </title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/jquery-3.2.1.min.js"></script>
+
+        <script src="js/javascript.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!--<link rel="stylesheet" type="text/css" href="css/debug.css">-->
+    </head>
+    <body id="body">
+        <nav id="home_nav">
+            <div class="hamburger-menu" onclick="menuClicked(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul id="nav_links" class="inline">
+                <li><a href="#about_me" class="btn nav_btn active" id="aboutme_btn"> About Me </a></li>
+                <li><a href="#my_skills" class="btn nav_btn" id="skills_btn"> Skills </a></li>
+                <li><a href="#my_projects" class="btn nav_btn" id="myprojects_btn"> My Projects </a></li>
+            </ul>
+            <ul id="soc_net" class="inline">
+                <li> vgalvosowork@gmail.com |</li>
+                <li> +63 999 525 4774</li>
+            </ul>
+        </nav>
+        <div id="main">
+            <div class="pages">
+
+                <div id="about_me" class="page flex">
+                    <img src="res/photo.png" id="my_photo" class="inline"/>
+                    <div class="inline aboutme">
+                        <h1 class="inline heading my_name">Hi, I'm Van</h1>
+                        <p> I'm a <span class="emphasize">software developer</span> with 2 years of experience
+                            in web and windows app.
+                        </p>
+                        <p> I love <span class="emphasize">hard-coding</span>, 
+                            <span class="emphasize">back-end</span>  programming
+                            and <span class="emphasize">debugging</span>.</p>
+                    </div>
+                </div>
+
+                <div id="my_skills" class="page flex">   
+                    <div class="full-width">
+                        <hr class="header-line page-title-item" />
+                        <h2 class="dark-gray page-title-item"> My Skills </h2>
+                        <hr class="header-line page-title-item" />
+                    </div>
+                    <table>
+                        <tr>
+                            <td>
+                                <img class="icon" src="res/skills/android.png" />
+                            </td>
+                            <td>
+                                <hr class="skill-lvl border-red" />
+                            </td>
+                            <td>
+                                <hr class="skill-lvl border-red" />
+                            </td>
+                            <td>
+                                <hr class="skill-lvl border-red" />
+                            </td>
+                            <td>
+                                <p> Some infos... </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img class="icon" src="res/skills/csharp.png" />
+                            </td>
+                            <td>
+                                <hr class="skill-lvl border-red" />
+                            </td>
+                            <td>
+                                <hr class="skill-lvl border-red" />
+                            </td>
+                            <td>
+                                <hr class="skill-lvl border-red" />
+                            </td>
+                            <td>
+                                <p> Some infos... </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img class="icon" src="res/skills/css3.png" />
+                            </td>
+                            <td>
+                                <hr class="skill-lvl border-yellow" />
+                            </td>
+                            <td>
+                                <hr class="skill-lvl border-yellow" />
+                            </td>
+                            <td>
+                                <hr class="skill-lvl border-gray" />
+                            </td>
+                            <td>
+                                <p> Some infos... </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img class="icon" src="res/skills/html5.png" />
+                            </td>
+                            <td>
+                                <hr class="skill-lvl border-green" />
+                            </td>
+                            <td>
+                                <hr class="skill-lvl border-gray" />
+                            </td>
+                            <td>
+                                <hr class="skill-lvl border-gray" />
+                            </td>
+                            <td>
+                                <p> Some infos... </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img class="icon" src="res/skills/java.png" />
+                            </td>
+                            <td>
+                                <hr class="skill-lvl border-green" />
+                            </td>
+                            <td>
+                                <hr class="skill-lvl border-gray" />
+                            </td>
+                            <td>
+                                <hr class="skill-lvl border-gray" />
+                            </td>
+                            <td>
+                                <p> Some infos... </p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div id="my_projects" class="page flex">
+                    <div class="full-width">
+                        <hr class="header-line page-title-item" />
+                        <h2 class="dark-gray page-title-item"> My Projects </h2>
+                        <hr class="header-line page-title-item" />
+                    </div>
+                    <div class="project" id="proj1">
+                        <div class="inline projpic">
+                            <img src="res/am.png">
+                        </div>
+                        <div class="inline projdetails">
+                            <h3 class="header"> Activity Monitoring </h3>
+                            <p> Record daily activities, computaion of 
+                                man hour utilization rate and HR basis for attendance penalties.
+                            </p>
+                            <button class="showmore_btn" id="smbtn1" onclick="showProj(this,'#show_proj1')"> 
+                                <span class="text">Show more</span> 
+                                <img src="res/downbtn.png">
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="showmore" id="show_proj1">
+                        <h3> New Project </h3>
+                    </div>
+                    
+                    <div class="project" id="proj2">
+                        <div class="inline projpic">
+                            <img src="res/timed2.png">
+                        </div>
+                        <div class="inline projdetails">
+                            <h3 class="header"> Timed </h3>
+                            <p> Create project calendar, assign schedule to team members
+                                and track project status.
+                            </p>
+                            <button class="showmore_btn" id="smbtn2" onclick="showProj(this,'#show_proj2')">
+                                <span class="text">Show more</span> 
+                                <img src="res/downbtn.png">
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="showmore" id="show_proj2">
+                        <h3> New Project </h3>
+                    </div>
+                    
+                    <div class="project" id="proj3">
+                        <div class="inline projpic">
+                            <img src="res/ticketing.png">
+                        </div>
+                        <div class="inline projdetails">
+                            <h3 class="header"> Ticketing System </h3>
+                            <p> Handle internal requests to every department in the company.</p>
+                            <button class="showmore_btn" id="smbtn3" onclick="showProj(this,'#show_proj3')">
+                                <span class="text">Show more</span> 
+                                <img src="res/downbtn.png">
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="showmore" id="show_proj3">
+                        <h3> New Project </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
