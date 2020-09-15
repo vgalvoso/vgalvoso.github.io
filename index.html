@@ -16,7 +16,7 @@
     </head>
     <body id="body">
         <nav id="home_nav">
-            <ul id="nav_links" class="inline">
+            <ul class="nav_links inline">
                 <li><a href="#about_me" class="btn nav_btn active" id="aboutme_btn"> About Me </a></li>
                 <li><a href="#my_skills" class="btn nav_btn" id="skills_btn"> Skills </a></li>
                 <li><a href="#my_projects" class="btn nav_btn" id="myprojects_btn"> My Projects </a></li>
@@ -27,30 +27,32 @@
             </ul>
         </nav>
         <div id="main">
-            <div class="pages">
-
-                <div id="about_me" class="page flex">
-                    <img src="res/photo.png" id="my_photo" class="inline"/>
-                    <div class="inline aboutme">
-                        <h1 class="inline heading my_name">Hi, I'm Van</h1>
-                        <p> I'm a <em>software developer</em> with 2 years of industry experience
-                            in web and windows app.
-                        </p>
-                        <p> I love <em>hard-coding</em>, 
-                            <em>back-end</em>  programming
-                            and <em>debugging</em>.</p>
-                            <br />
-                        <i> "There is always a room for improvement." </i>
-                    </div>
+            <div id="about_me" class="page flex">
+                <img src="res/photo.png" id="my_photo" class="inline"/>
+                <div class="inline aboutme">
+                    <h1 class="inline heading my_name">Hi, I'm Van</h1>
+                    <p> I'm a <em>software developer</em> with 2 years of industry experience
+                        in web and windows app.
+                    </p>
+                    <p> I love <em>hard-coding</em>, 
+                        <em>back-end</em>  programming
+                        and <em>debugging</em>.</p>
+                        <br />
+                    <i> "There is always a room for improvement." </i>
                 </div>
+            </div>
 
-                <div id="my_skills" class="page flex">   
-                    <div class="full-width">
-                        <hr class="header-line page-title-item" />
-                        <h2 class="dark-gray page-title-item"> My Skills </h2>
-                        <hr class="header-line page-title-item" />
-                    </div>
-                    <table>
+            <div id="my_skills" class="page flex flex-column">   
+                <div class="full-width">
+                    <hr class="header-line page-title-item" />
+                    <h2 class="dark-gray page-title-item"> My Skills </h2>
+                    <hr class="header-line page-title-item" />
+                </div>
+                <div class="flex w-50">
+                    <input type="text" class="w-50" id="search_box" placeholder="Search a skill" />
+                </div>
+                <div class="flex">
+                    <table class="inline full-width" id="myskill_table">
                         <tr>
                             <td>
                                 <h4 class="red"> Advanced </h4>
@@ -140,72 +142,105 @@
                                 <p> Basic knowledge in <em>Codeigniter4</em>. </p>
                             </td>
                         </tr>
+                        <tr>
+                            <td>
+                                <h4 class="green"> Beginner </h4>
+                            </td>
+                            <td>
+                                <img class="icon" src="res/skills/codeigniter.png" />
+                            </td>
+                            <td>
+                                <p> Basic knowledge in <em>Codeigniter4</em>. </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4 class="green"> Beginner </h4>
+                            </td>
+                            <td>
+                                <img class="icon" src="res/skills/codeigniter.png" />
+                            </td>
+                            <td>
+                                <p> Basic knowledge in <em>Codeigniter4</em>. </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4 class="green"> Beginner </h4>
+                            </td>
+                            <td>
+                                <img class="icon" src="res/skills/codeigniter.png" />
+                            </td>
+                            <td>
+                                <p> Basic knowledge in <em>Codeigniter4</em>. </p>
+                            </td>
+                        </tr>
                     </table>
                 </div>
+            </div>
+            
+            <div id="my_projects" class="page flex">
+                <div class="full-width">
+                    <hr class="header-line page-title-item" />
+                    <h2 class="dark-gray page-title-item"> My Projects </h2>
+                    <hr class="header-line page-title-item" />
+                </div>
+                <div class="project" id="proj1">
+                    <div class="inline projpic">
+                        <img src="res/am.png">
+                    </div>
+                    <div class="inline projdetails">
+                        <h3 class="header"> Activity Monitoring </h3>
+                        <p> Record daily activities, computaion of 
+                            man hour utilization rate and HR basis for attendance penalties.
+                        </p>
+                        <button class="showmore_btn" id="smbtn1" onclick="showProj(this,'#show_proj1')"> 
+                            <span class="text">Show more</span> 
+                            <img src="res/downbtn.png">
+                        </button>
+                    </div>
+                </div>
                 
-                <div id="my_projects" class="page flex">
-                    <div class="full-width">
-                        <hr class="header-line page-title-item" />
-                        <h2 class="dark-gray page-title-item"> My Projects </h2>
-                        <hr class="header-line page-title-item" />
+                <div class="showmore" id="show_proj1">
+                    <h3> New Project </h3>
+                </div>
+                
+                <div class="project" id="proj2">
+                    <div class="inline projpic">
+                        <img src="res/timed2.png">
                     </div>
-                    <div class="project" id="proj1">
-                        <div class="inline projpic">
-                            <img src="res/am.png">
-                        </div>
-                        <div class="inline projdetails">
-                            <h3 class="header"> Activity Monitoring </h3>
-                            <p> Record daily activities, computaion of 
-                                man hour utilization rate and HR basis for attendance penalties.
-                            </p>
-                            <button class="showmore_btn" id="smbtn1" onclick="showProj(this,'#show_proj1')"> 
-                                <span class="text">Show more</span> 
-                                <img src="res/downbtn.png">
-                            </button>
-                        </div>
+                    <div class="inline projdetails">
+                        <h3 class="header"> Timed </h3>
+                        <p> Create project calendar, assign schedule to team members
+                            and track project status.
+                        </p>
+                        <button class="showmore_btn" id="smbtn2" onclick="showProj(this,'#show_proj2')">
+                            <span class="text">Show more</span> 
+                            <img src="res/downbtn.png">
+                        </button>
                     </div>
-                    
-                    <div class="showmore" id="show_proj1">
-                        <h3> New Project </h3>
+                </div>
+                
+                <div class="showmore" id="show_proj2">
+                    <h3> New Project </h3>
+                </div>
+                
+                <div class="project" id="proj3">
+                    <div class="inline projpic">
+                        <img src="res/ticketing.png">
                     </div>
-                    
-                    <div class="project" id="proj2">
-                        <div class="inline projpic">
-                            <img src="res/timed2.png">
-                        </div>
-                        <div class="inline projdetails">
-                            <h3 class="header"> Timed </h3>
-                            <p> Create project calendar, assign schedule to team members
-                                and track project status.
-                            </p>
-                            <button class="showmore_btn" id="smbtn2" onclick="showProj(this,'#show_proj2')">
-                                <span class="text">Show more</span> 
-                                <img src="res/downbtn.png">
-                            </button>
-                        </div>
+                    <div class="inline projdetails">
+                        <h3 class="header"> Ticketing System </h3>
+                        <p> Handle internal requests to every department in the company.</p>
+                        <button class="showmore_btn" id="smbtn3" onclick="showProj(this,'#show_proj3')">
+                            <span class="text">Show more</span> 
+                            <img src="res/downbtn.png">
+                        </button>
                     </div>
-                    
-                    <div class="showmore" id="show_proj2">
-                        <h3> New Project </h3>
-                    </div>
-                    
-                    <div class="project" id="proj3">
-                        <div class="inline projpic">
-                            <img src="res/ticketing.png">
-                        </div>
-                        <div class="inline projdetails">
-                            <h3 class="header"> Ticketing System </h3>
-                            <p> Handle internal requests to every department in the company.</p>
-                            <button class="showmore_btn" id="smbtn3" onclick="showProj(this,'#show_proj3')">
-                                <span class="text">Show more</span> 
-                                <img src="res/downbtn.png">
-                            </button>
-                        </div>
-                    </div>
-                    
-                    <div class="showmore" id="show_proj3">
-                        <h3> New Project </h3>
-                    </div>
+                </div>
+                
+                <div class="showmore" id="show_proj3">
+                    <h3> New Project </h3>
                 </div>
             </div>
         </div>

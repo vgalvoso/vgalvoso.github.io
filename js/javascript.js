@@ -1,3 +1,13 @@
+//filter table
+$(document).ready(function(){
+    $("#search_box").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myskill_table tr").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+    });
+});
+
 function showProj(element,div){
     var text = $(element).find(".text").html();
     if(text == "Show more")
