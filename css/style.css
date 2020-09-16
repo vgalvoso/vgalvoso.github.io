@@ -36,6 +36,10 @@ em{
     font-weight:bold;
 }
 
+p{
+    text-indent:25px;
+}
+
 ul{
     list-style-type: none;
     text-align:center;
@@ -619,7 +623,7 @@ footer{
   height:350px;
   max-width:600px;
   margin-top:0px;
-
+margin-bottom:10px;
 }
 
 .modal-content{

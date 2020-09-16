@@ -154,7 +154,7 @@
                             <label> jquery </label>
                         </div>
                         <br />
-                        <button class="showmore_btn" onclick="showModal()" id="smbtn1"> 
+                        <button class="showmore_btn" onclick="showModal(1)" id="smbtn1"> 
                             <span class="text">Show more</span> 
                         </button>
                     </div>
@@ -177,7 +177,7 @@
                             <label> jquery </label>
                         </div>
                         <br />
-                        <button class="showmore_btn" onclick="showModal()" id="smbtn2">
+                        <button class="showmore_btn" onclick="showModal(2)" id="smbtn2">
                             <span class="text">Show more</span> 
                         </button>
                     </div>
@@ -198,7 +198,7 @@
                             <label> jquery </label>
                         </div>
                         <br />
-                        <button class="showmore_btn" onclick="showModal()" id="smbtn3">
+                        <button class="showmore_btn" onclick="showModal(3)" id="smbtn3">
                             <span class="text">Show more</span> 
                         </button>
                     </div>
@@ -244,6 +244,15 @@
             <p class="modal-subtitle" id="project_description"> Web application developed for a construction company 
                 as IT Programmer. </p>
             <img class="modal-img" id="project_img" src="res/am.png" />
+            <div class="flex" >
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <a><span class="dot" onclick="goTo('skill1')"></span></a>
+                    <a><span class="dot" onclick="goTo('skill2')"></span></a>
+                    <a><span class="dot" onclick="goTo('skill3')"></span></a>
+                    <a><span class="dot" onclick="goTo('skill4')"></span></a>
+                </div>
+            </div>
             <div class="modal-content full-width">
                 <h2 class="modal-content-title"> Story </h2>
                 <hr class="w-50 left border-red"/>
