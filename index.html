@@ -6,7 +6,6 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="js/jquery-3.2.1.min.js"></script>
 
         <script src="js/javascript.js"></script>
@@ -15,6 +14,7 @@
         <!--<link rel="stylesheet" type="text/css" href="css/debug.css">-->
     </head>
     <body id="body">
+        <!-- Top Nav-->
         <nav id="home_nav">
             <ul class="nav_links inline">
                 <li><a href="#about_me" class="btn nav_btn active" id="aboutme_btn"> About Me </a></li>
@@ -26,7 +26,9 @@
                 <li><a href="tel:09995254774"> +63 999 525 4774 </a></li>
             </ul>
         </nav>
-        <div id="main">
+
+        <!-- Main Content -->
+        <div id="main">           
             <div id="about_me" class="page flex">
                 <img src="res/photo.png" id="my_photo" class="inline"/>
                 <div class="inline aboutme">
@@ -144,15 +146,18 @@
                         <p> Record daily activities, computaion of 
                             man hour utilization rate and HR basis for attendance penalties.
                         </p>
-                        <button class="showmore_btn" id="smbtn1" onclick="showProj(this,'#show_proj1')"> 
+                        <div class="tags">
+                            <label> php </label>
+                            <label> html </label>
+                            <label> css </label>
+                            <label> javascript </label>
+                            <label> jquery </label>
+                        </div>
+                        <br />
+                        <button class="showmore_btn" onclick="showModal()" id="smbtn1"> 
                             <span class="text">Show more</span> 
-                            <img src="res/downbtn.png">
                         </button>
                     </div>
-                </div>
-                
-                <div class="showmore" id="show_proj1">
-                    <h3> New Project </h3>
                 </div>
                 
                 <div class="project" id="proj2">
@@ -164,15 +169,18 @@
                         <p> Create project calendar, assign schedule to team members
                             and track project status.
                         </p>
-                        <button class="showmore_btn" id="smbtn2" onclick="showProj(this,'#show_proj2')">
+                        <div class="tags">
+                            <label> php </label>
+                            <label> html </label>
+                            <label> css </label>
+                            <label> javascript </label>
+                            <label> jquery </label>
+                        </div>
+                        <br />
+                        <button class="showmore_btn" onclick="showModal()" id="smbtn2">
                             <span class="text">Show more</span> 
-                            <img src="res/downbtn.png">
                         </button>
                     </div>
-                </div>
-                
-                <div class="showmore" id="show_proj2">
-                    <h3> New Project </h3>
                 </div>
                 
                 <div class="project" id="proj3">
@@ -182,23 +190,30 @@
                     <div class="inline projdetails">
                         <h3 class="header"> Ticketing System </h3>
                         <p> Handle internal requests to every department in the company.</p>
-                        <button class="showmore_btn" id="smbtn3" onclick="showProj(this,'#show_proj3')">
+                        <div class="tags">
+                            <label> php </label>
+                            <label> html </label>
+                            <label> css </label>
+                            <label> javascript </label>
+                            <label> jquery </label>
+                        </div>
+                        <br />
+                        <button class="showmore_btn" onclick="showModal()" id="smbtn3">
                             <span class="text">Show more</span> 
-                            <img src="res/downbtn.png">
                         </button>
                     </div>
-                </div>
-                
-                <div class="showmore" id="show_proj3">
-                    <h3> New Project </h3>
                 </div>
             </div>
         </div>
         <br />
+
+        <!-- Footer -->
         <label class="flex">
             <label> &copy; Sep 2020 | Van Hudson Galvoso </label>
         </label>
         <br />
+
+        <!-- Side Nav (responsive)-->
         <div id="side_nav">
             <div class="hamburger-menu" onclick="menuClicked(this)">
                 <div class="bar1"></div>
@@ -216,6 +231,39 @@
                     <li class="white"> vanpapers@gmail.com </li>
                     <li class="white"> +63 999 525 4774</li>
                 </ul>
+            </div>
+        </div>
+
+        <!-- MODALS -->
+        <div class="modal-bg">
+        </div>
+        <!-- Project Modal -->
+        <div class="modal flex-left flex-row flex-start">
+            <button class="modal-close-btn btn white" onclick="closeModal()">X</button>
+            <h1 class="modal-title white" id="project_title"> Activity Monitoring </h1>
+            <p class="modal-subtitle" id="project_description"> Web application developed for a construction company 
+                as IT Programmer. </p>
+            <img class="modal-img" id="project_img" src="res/am.png" />
+            <div class="modal-content full-width">
+                <h2 class="modal-content-title"> Story </h2>
+                <hr class="w-50 left border-red"/>
+                <content class="modal-content">
+                    <p id="project_story"> Sample content. </p>
+                </content>
+            </div>
+            <div class="modal-content full-width">
+                <h2 class="modal-content-title"> Used Technologies </h2>
+                <hr class="w-50 left border-red"/>
+                <content class="modal-content">
+                    <ul class="button-list" id="project_techs">
+                        <li> - PHP </li>
+                        <li> - HTML5 </li>
+                        <li> - CSS3 </li>
+                        <li> - Javacript </li>
+                        <li> - JQuery </li>
+                        <li> - Ajax </li>
+                    </ul>
+                </content>
             </div>
         </div>
     </body>

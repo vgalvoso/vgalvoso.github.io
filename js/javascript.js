@@ -8,20 +8,6 @@ $(document).ready(function(){
     });
 });
 
-function showProj(element,div){
-    var text = $(element).find(".text").html();
-    if(text == "Show more")
-    {
-        $(element).find(".text").html("Show less");
-        $(element).find("img").attr("src","res/upbtn.png");
-    }
-    else{
-        $(element).find(".text").html("Show more");
-        $(element).find("img").attr("src","res/downbtn.png");
-    }
-    $(div).slideToggle();
-}
-
 $(document).ready(function(){
     $('.nav_btn').on('click',function(){
         $('.nav_btn').removeClass('active');
@@ -51,4 +37,20 @@ function menuClicked(x) {
 
 function goTo(id){
     document.getElementById(id).scrollIntoView(false);
+}
+
+function closeModal(){
+    $(".modal-bg").fadeOut();
+    $(".modal").fadeOut();
+    $("body").css("overflow","auto");
+}
+
+function showModal(){
+    $(".modal-bg").fadeIn();
+    $(".modal").fadeIn();
+    $("body").css("overflow","hidden");
+}
+
+function populateProj1(){
+    $('.')
 }
