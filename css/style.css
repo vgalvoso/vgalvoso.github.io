@@ -131,6 +131,7 @@ input[type=text]{
 #drawer_links li a{
     color:white;
     padding:10px 14px;
+    width:100%;
 }
 
 /* hamburger menu */
@@ -196,6 +197,10 @@ input[type=text]{
 
 .aboutme{
     margin:5px;
+}
+
+.hidden{
+    visibility:hidden;
 }
 
 .inline{
@@ -360,8 +365,8 @@ footer{
 }
 
 .icon{
-    height:60px;
-    width:60px;
+    height:50px;
+    width:50px;
     border-radius:4px;
     border:solid 2px var(--main-orange);
 }
@@ -398,23 +403,6 @@ footer{
     max-height:500px;
     overflow-y:auto;
 }
-
-/* carousel */
-/* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
 
 /* border */
 .border{
@@ -476,6 +464,23 @@ footer{
 
 .dark-gray{
     color:var(--dark-gray);
+}
+
+/* skills category */
+.card{
+    display:inline-block;
+    border:solid 2px var(--main-orange);
+    border-radius:4px;
+    width:240px;
+    background-color: var(--main-orange);
+    margin:14px;
+    box-shadow:4px 4px 2px -1px gray;
+    padding:0px 10px 0px 10px;
+}
+
+.category-img{
+    width:200px;
+    height:200px;
 }
 
 @media only screen and (max-width: 930px) {

@@ -19,7 +19,7 @@
             <ul class="nav_links inline">
                 <li><a href="#about_me" class="btn nav_btn active" id="aboutme_btn"> About Me </a></li>
                 <li><a href="#my_skills" class="btn nav_btn" id="skills_btn"> Skills </a></li>
-                <li><a href="#my_projects" class="btn nav_btn" id="myprojects_btn"> My Projects </a></li>
+                <li><a href="#my_projects" class="btn nav_btn" id="myprojects_btn"> Portfolio </a></li>
             </ul>
             <ul id="soc_net" class="inline">
                 <li> vanpapers@gmail.com |</li>
@@ -42,147 +42,86 @@
                 </div>
             </div>
 
-            <div id="my_skills" class="page flex flex-column">   
+            <div id="my_skills" class="page flex">   
                 <div class="full-width">
                     <hr class="header-line page-title-item" />
                     <h2 class="dark-gray page-title-item"> My Skills </h2>
                     <hr class="header-line page-title-item" />
                 </div>
-                <div class="flex w-50">
-                    <input type="text" class="w-50" id="search_box" placeholder="Search a skill" />
+                <div class="flex flex-column card">
+                    <img  class="category-img" src="res/category/www.png" />
+                    <h3 class="white"> Web Development </h3>
+                    <div>
+                        <table>
+                            <tr>
+                                <td><img class="icon" src="res/skills/html5.png" /></td>
+                                <td><img class="icon" src="res/skills/css3.png" /></td>
+                                <td><img class="icon" src="res/skills/js.png" /></td>
+                                <td><img class="icon" src="res/skills/jquery.png" /></td>
+                            </tr>
+                            <tr>
+                                <td><img class="icon" src="res/skills/json.png" /></td>
+                                <td><img class="icon" src="res/skills/mysql.png" /></td>
+                                <td><img class="icon" src="res/skills/codeigniter.png" /></td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-                <div class="flex">
-                    <table class="inline full-width" id="myskill_table">
-                        <tr>
-                            <td>
-                                <h4 class="red"> Advanced </h4>
-                            </td>
-                            <td>
-                                <img class="icon" src="res/skills/php.png" />
-                            </td>
-                            <td>
-                                <p> Ability to create complex web applications using pure 
-                                    <em>PHP</em>. </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h4 class="red"> Advanced </h4>
-                            </td>
-                            <td>
-                                <img class="icon" src="res/skills/html5.png" />
-                            </td>
-                            <td>
-                                <p> Understanding <em>HTML5</em> elements,tags, and attributes uses. </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h4 class="yellow"> Intermediate </h4>
-                            </td>
-                            <td>
-                                <img class="icon" src="res/skills/css3.png" />
-                            </td>
-                            <td>
-                                <p> This website is created with my own custom <em>CSS3</em> stylesheet. </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h4 class="yellow"> Intermediate </h4>
-                            </td>
-                            <td>
-                                <img class="icon" src="res/skills/js.png" />
-                            </td>
-                            <td>
-                                <p> Ability to create complex functions using native <em>Javascript</em>. </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h4 class="yellow"> Intermediate </h4>
-                            </td>
-                            <td>
-                                <img class="icon" src="res/skills/jquery.png" />
-                            </td>
-                            <td>
-                                <p> Creating dynamic web app using <em>jQuery</em> functions like <em>ajax</em>. </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h4 class="yellow"> Intermediate </h4>
-                            </td>
-                            <td>
-                                <img class="icon" src="res/skills/json.png" />
-                            </td>
-                            <td>
-                                <p> Using <em>JSON</em> format to manage complex and large datas. </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h4 class="red"> Advanced </h4>
-                            </td>
-                            <td>
-                                <img class="icon" src="res/skills/mysql.png" />
-                            </td>
-                            <td>
-                                <p> Plan and create relational database with proper structure. </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h4 class="green"> Beginner </h4>
-                            </td>
-                            <td>
-                                <img class="icon" src="res/skills/codeigniter.png" />
-                            </td>
-                            <td>
-                                <p> Basic knowledge in <em>Codeigniter4</em>. </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h4 class="green"> Beginner </h4>
-                            </td>
-                            <td>
-                                <img class="icon" src="res/skills/codeigniter.png" />
-                            </td>
-                            <td>
-                                <p> Basic knowledge in <em>Codeigniter4</em>. </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h4 class="green"> Beginner </h4>
-                            </td>
-                            <td>
-                                <img class="icon" src="res/skills/codeigniter.png" />
-                            </td>
-                            <td>
-                                <p> Basic knowledge in <em>Codeigniter4</em>. </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h4 class="green"> Beginner </h4>
-                            </td>
-                            <td>
-                                <img class="icon" src="res/skills/codeigniter.png" />
-                            </td>
-                            <td>
-                                <p> Basic knowledge in <em>Codeigniter4</em>. </p>
-                            </td>
-                        </tr>
-                    </table>
+                <div class="flex flex-column card">
+                    <img  class="category-img" src="res/category/exe.png" />
+                    <h3 class="white"> Desktop App Development </h3>
+                    <div>
+                        <table>
+                            <tr>
+                                <td><img class="icon" src="res/skills/csharp.png" /></td>
+                                <td><img class="icon" src="res/skills/vb.net.png" /></td>
+                                <td><img class="icon" src="res/skills/java.png" /></td>
+                                <td><img class="icon" src="res/skills/access.png" /></td>
+                            </tr>
+                            <tr>
+                                <td><img class="icon" src="res/skills/mssql.png" /></td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-            </div>
+                <div class="flex flex-column card">
+                    <img class="category-img" src="res/category/android.png" />
+                    <h3 class="white"> Mobile Development </h3>
+                    <div>
+                        <table>
+                            <tr>
+                                <td><img class="icon" src="res/skills/android.png" /></td>
+                                <td><img class="icon" src="res/skills/androidstudio.png" /></td>
+                                <td><img class="icon" src="res/skills/java.png" /></td>
+                            </tr>
+                            <tr>
+                                <td><img class="icon hidden" src="res/skills/java.png"/></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="flex flex-column card">
+                    <img class="category-img" src="res/category/otherskill.png" />
+                    <h3 class="white"> Other Skills </h3>
+                    <div>
+                        <table>
+                            <tr>
+                                <td><img class="icon" src="res/skills/photoshop.png" /></td>
+                                <td><img class="icon" src="res/skills/git.png" /></td>
+                                <td><img class="icon" src="res/skills/github.png" /></td>
+                            </tr>
+                            <tr>
+                                <td><img class="icon hidden" src="res/skills/java.png"/></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+             </div>
             
             <div id="my_projects" class="page flex">
                 <div class="full-width">
                     <hr class="header-line page-title-item" />
-                    <h2 class="dark-gray page-title-item"> My Projects </h2>
+                    <h2 class="dark-gray page-title-item"> Portfolio </h2>
                     <hr class="header-line page-title-item" />
                 </div>
                 <div class="project" id="proj1">
