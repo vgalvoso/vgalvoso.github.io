@@ -48,72 +48,83 @@
                     <h2 class="dark-gray page-title-item"> My Skills </h2>
                     <hr class="header-line page-title-item" />
                 </div>
-                <div class="flex flex-column card">
-                    <img  class="category-img" src="res/category/www.png" />
-                    <h3 class="white"> Web Development </h3>
-                    <div>
-                        <table>
-                            <tr>
-                                <td><img class="icon" src="res/skills/html5.png" /></td>
-                                <td><img class="icon" src="res/skills/css3.png" /></td>
-                                <td><img class="icon" src="res/skills/js.png" /></td>
-                                <td><img class="icon" src="res/skills/jquery.png" /></td>
-                            </tr>
-                            <tr>
-                                <td><img class="icon" src="res/skills/json.png" /></td>
-                                <td><img class="icon" src="res/skills/mysql.png" /></td>
-                                <td><img class="icon" src="res/skills/codeigniter.png" /></td>
-                            </tr>
-                        </table>
+                <div class="flex dot-container" >
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <a><span class="dot" onclick="goTo('skill1')"></span></a>
+                        <a><span class="dot" onclick="goTo('skill2')"></span></a>
+                        <a><span class="dot" onclick="goTo('skill3')"></span></a>
+                        <a><span class="dot" onclick="goTo('skill4')"></span></a>
                     </div>
                 </div>
-                <div class="flex flex-column card">
-                    <img  class="category-img" src="res/category/exe.png" />
-                    <h3 class="white"> Desktop App Development </h3>
-                    <div>
-                        <table>
-                            <tr>
-                                <td><img class="icon" src="res/skills/csharp.png" /></td>
-                                <td><img class="icon" src="res/skills/vb.net.png" /></td>
-                                <td><img class="icon" src="res/skills/java.png" /></td>
-                                <td><img class="icon" src="res/skills/access.png" /></td>
-                            </tr>
-                            <tr>
-                                <td><img class="icon" src="res/skills/mssql.png" /></td>
-                            </tr>
-                        </table>
+                <div class="flex no-wrap flex-start invisible-scroll skill-container">
+                    <div class="flex flex-column card" id="skill1">
+                        <img  class="category-img" src="res/category/www.png" />
+                        <h3 class="white"> Web Development </h3>
+                        <div class="flex">
+                            <table>
+                                <tr>
+                                    <td><img class="icon" src="res/skills/html5.png" /></td>
+                                    <td><img class="icon" src="res/skills/css3.png" /></td>
+                                    <td><img class="icon" src="res/skills/js.png" /></td>
+                                    <td><img class="icon" src="res/skills/jquery.png" /></td>
+                                </tr>
+                                <tr>
+                                    <td><img class="icon" src="res/skills/json.png" /></td>
+                                    <td><img class="icon" src="res/skills/mysql.png" /></td>
+                                    <td><img class="icon" src="res/skills/codeigniter.png" /></td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
-                </div>
-                <div class="flex flex-column card">
-                    <img class="category-img" src="res/category/android.png" />
-                    <h3 class="white"> Mobile Development </h3>
-                    <div>
-                        <table>
-                            <tr>
-                                <td><img class="icon" src="res/skills/android.png" /></td>
-                                <td><img class="icon" src="res/skills/androidstudio.png" /></td>
-                                <td><img class="icon" src="res/skills/java.png" /></td>
-                            </tr>
-                            <tr>
-                                <td><img class="icon hidden" src="res/skills/java.png"/></td>
-                            </tr>
-                        </table>
+                    <div class="flex flex-column card" id="skill2">
+                        <img  class="category-img" src="res/category/exe.png" />
+                        <h3 class="white"> Desktop App Development </h3>
+                        <div class="flex">
+                            <table>
+                                <tr>
+                                    <td><img class="icon" src="res/skills/csharp.png" /></td>
+                                    <td><img class="icon" src="res/skills/vb.net.png" /></td>
+                                    <td><img class="icon" src="res/skills/java.png" /></td>
+                                    <td><img class="icon" src="res/skills/access.png" /></td>
+                                </tr>
+                                <tr>
+                                    <td><img class="icon" src="res/skills/mssql.png" /></td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
-                </div>
-                <div class="flex flex-column card">
-                    <img class="category-img" src="res/category/otherskill.png" />
-                    <h3 class="white"> Other Skills </h3>
-                    <div>
-                        <table>
-                            <tr>
-                                <td><img class="icon" src="res/skills/photoshop.png" /></td>
-                                <td><img class="icon" src="res/skills/git.png" /></td>
-                                <td><img class="icon" src="res/skills/github.png" /></td>
-                            </tr>
-                            <tr>
-                                <td><img class="icon hidden" src="res/skills/java.png"/></td>
-                            </tr>
-                        </table>
+                    <div class="flex flex-column card" id="skill3">
+                        <img class="category-img" src="res/category/android.png" />
+                        <h3 class="white"> Mobile Development </h3>
+                        <div class="flex">
+                            <table>
+                                <tr>
+                                    <td><img class="icon" src="res/skills/android.png" /></td>
+                                    <td><img class="icon" src="res/skills/androidstudio.png" /></td>
+                                    <td><img class="icon" src="res/skills/java.png" /></td>
+                                </tr>
+                                <tr>
+                                    <td><img class="icon hidden" src="res/skills/java.png"/></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="flex flex-column card" id="skill4">
+                        <img class="category-img" src="res/category/otherskill.png" />
+                        <h3 class="white"> Other Skills </h3>
+                        <div class="flex">
+                            <table>
+                                <tr>
+                                    <td><img class="icon" src="res/skills/photoshop.png" /></td>
+                                    <td><img class="icon" src="res/skills/git.png" /></td>
+                                    <td><img class="icon" src="res/skills/github.png" /></td>
+                                </tr>
+                                <tr>
+                                    <td><img class="icon hidden" src="res/skills/java.png"/></td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
                 </div>
              </div>

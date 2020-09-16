@@ -37,9 +37,18 @@ $(document).ready(function(){
     $('.hamburger-menu').on('click',function(){
         $('.side-drawer').slideToggle();
     });
+
+    $('.dot').on('click',function(){
+        $('.dot').removeClass("dot-active")
+        $(this).addClass("dot-active");
+    });
 });
 
 //for hamburger menu and sidenav
 function menuClicked(x) {
     x.classList.toggle("change");
+}
+
+function goTo(id){
+    document.getElementById(id).scrollIntoView(false);
 }

@@ -178,6 +178,14 @@ input[type=text]{
     overflow-x:hidden;
 }
 
+.no-wrap{
+    flex-wrap:nowrap;
+}
+
+.flex-start{
+    justify-content: flex-start;
+}
+
 .flex-column{
     flex-direction:column;
 }
@@ -193,6 +201,35 @@ input[type=text]{
     border: 8px solid #999999;
     background-color: #e6e6e6;
     min-width:200px;
+}
+
+.invisible-scroll{
+    overflow:auto;
+    scrollbar-width:none;
+    scroll-behavior: smooth;
+}
+
+.invisible-scroll::-webkit-scrollbar{
+    display:none;
+}
+
+.dot-container{
+    display:none;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot-active, .dot:hover {
+    background-color: #717171;
 }
 
 .aboutme{
@@ -223,6 +260,10 @@ input[type=text]{
 
 .my_name{
     color:black;
+}
+
+#my_skills, .skill-container{
+    overflow:visible;
 }
 
 #soc_net ul li a{
@@ -468,7 +509,7 @@ footer{
 
 /* skills category */
 .card{
-    display:inline-block;
+    display:inline;
     border:solid 2px var(--main-orange);
     border-radius:4px;
     width:240px;
@@ -476,6 +517,7 @@ footer{
     margin:14px;
     box-shadow:4px 4px 2px -1px gray;
     padding:0px 10px 0px 10px;
+    min-width:240px;
 }
 
 .category-img{
@@ -528,5 +570,22 @@ footer{
 
     #search_box{
         width:100%;
+    }
+
+    #my_skills{
+        overflow:hidden;
+    }
+
+    .skill-container{
+        overflow:auto;
+    }
+
+    .dot-container{
+        display:flex;
+    }
+
+    .card{
+        width:100%;
+        min-width:80%;
     }
   }
