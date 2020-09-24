@@ -209,7 +209,7 @@
 
         <!-- Footer -->
         <label class="flex">
-            <label> &copy; Sep 2020 | Van Hudson Galvoso </label>
+            <label> &copy; 2020 | Van Hudson Galvoso </label>
         </label>
         <br />
 
@@ -239,18 +239,19 @@
         </div>
         <!-- Project Modal -->
         <div class="modal flex-left flex-row flex-start">
+            <label class="hidden" id="project_id"></label>
             <button class="modal-close-btn btn white" onclick="closeModal()">X</button>
             <h1 class="modal-title white" id="project_title"> Activity Monitoring </h1>
             <p class="modal-subtitle" id="project_description"> Web application developed for a construction company 
                 as IT Programmer. </p>
             <img class="modal-img" id="project_img" src="res/am.png" />
-            <div class="flex hidden" >
+            <div class="flex" >
                 <!-- The dots/circles -->
                 <div style="text-align:center">
-                    <a><span class="dot" onclick="goTo('skill1')"></span></a>
-                    <a><span class="dot" onclick="goTo('skill2')"></span></a>
-                    <a><span class="dot" onclick="goTo('skill3')"></span></a>
-                    <a><span class="dot" onclick="goTo('skill4')"></span></a>
+                    <a><span class="dot" onclick="showPic(0)"></span></a>
+                    <a><span class="dot" onclick="showPic(1)"></span></a>
+                    <a><span class="dot" onclick="showPic(2)"></span></a>
+                    <a><span class="dot" onclick="showPic(3)"></span></a>
                 </div>
             </div>
             <div class="modal-content full-width">
