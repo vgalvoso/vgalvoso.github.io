@@ -80,6 +80,7 @@ function showAM(){
                         +"<li> - Javacript </li>"
                         +"<li> - JQuery </li>"
                         +"<li> - Ajax </li>";
+        $('#project_id').html("1");
         $("#project_title").html(project_title);
         $("#project_description").html(project_description);
         $("#project_img").attr("src",project_img);
@@ -107,6 +108,7 @@ function showTimed(){
                         +"<li> - Javacript </li>"
                         +"<li> - JQuery </li>"
                         +"<li> - Ajax </li>";
+        $('#project_id').html("2");
         $("#project_title").html(project_title);
         $("#project_description").html(project_description);
         $("#project_img").attr("src",project_img);
@@ -129,9 +131,39 @@ function showTicketing(){
                         +"<li> - Javacript </li>"
                         +"<li> - JQuery </li>"
                         +"<li> - Ajax </li>";
+        $('#project_id').html("3");
         $("#project_title").html(project_title);
         $("#project_description").html(project_description);
         $("#project_img").attr("src",project_img);
         $("#project_story").html(project_story);
         $("#project_techs").html(project_techs);
+}
+
+function showPic(num){
+    var project_id = $('#project_id').html();
+    var project_img = [];
+    switch(project_id){
+        case "1":
+            project_img = ["res/am/am.png",
+                    "res/am/am.png",
+                    "res/am/am.png",
+                    "res/am/am.png"];
+        break;
+        case "2":
+            project_img = ["res/timed/t1.png",
+                        "res/timed/t2.png",
+                        "res/timed/t3.png",
+                        "res/timed/t4.png"];
+        break;
+        case "3":
+            project_img = ["res/ticketing/adminaddtask.png",
+                        "res/ticketing/admintasklist.png",
+                        "res/ticketing/requestor.png",
+                        "res/ticketing/tracking.png"];
+        break;
+    }
+    $("#project_img").fadeOut("fast",function(){
+        $("#project_img").attr("src",project_img[num])
+    });
+    $("#project_img").fadeIn();
 }
