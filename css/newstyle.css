@@ -561,5 +561,14 @@ caption{
 
 .footer{
   position:sticky;
-  bottom:0;
+  top:0;
+}
+
+.tab-group{
+  width: 100%;
+  overflow-x:hidden;
+}
+
+.spread{
+  justify-content: space-between;
 }

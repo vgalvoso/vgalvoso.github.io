@@ -1,0 +1,21 @@
+.page{
+  width: 0px;
+  transition: all .5s ease-in-out;
+  overflow-x: hidden;
+  opacity: 0;
+}
+
+#home:target{
+  width: 100%;
+  opacity: 1;
+}
+
+#projects:target{
+  width: 100%;
+  opacity: 1;
+}
+
+#services:target{
+  width: 100%;
+  opacity: 1;
+}
