@@ -25,3 +25,11 @@
   height: auto;
 }
 
+@media only screen and (max-width: 800px) {
+  #left_pane{
+    display:none;
+  }
+  #right_pane{
+    overflow-y:auto;
+  }
+}
