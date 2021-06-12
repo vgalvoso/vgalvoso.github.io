@@ -74,6 +74,7 @@ ul li{
 
 /*#region NAVBAR */
 nav{
+  width: 100%;
   padding: 0 14px;
   top:0px;
   left:0px;
@@ -204,9 +205,11 @@ section{
   min-width:500px;
 }
 .column{
+  display: flex;
   flex-direction: column;
 }
 .row{
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -529,8 +532,9 @@ caption{
 .clickable{
   cursor:pointer;
 }
-.clickable:hover{
+.clickable:hover,.clickable:hover *{
   filter:brightness(75%);
+  cursor:pointer;
 }
 
 /* border */
@@ -545,6 +549,10 @@ caption{
 .padding{
   padding:10px 14px;
 }
+.margin{
+  margin:10px 14px;
+}
+
 
 .wrap{
   flex-wrap: wrap;
@@ -562,13 +570,28 @@ caption{
 .footer{
   position:sticky;
   top:0;
+  width: 100%;
 }
 
 .tab-group{
   width: 100%;
   overflow-x:hidden;
+  flex-direction: column;
+  overflow-anchor: auto;
 }
 
 .spread{
   justify-content: space-between;
+}
+
+.smooth{
+  border-radius:4px;
+}
+
+.center-text{
+  text-align: center;
+}
+
+.no-scroll{
+  overflow:hidden;
 }

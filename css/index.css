@@ -2,20 +2,26 @@
   width: 0px;
   transition: all .5s ease-in-out;
   overflow-x: hidden;
+  overflow-y: auto;
   opacity: 0;
+  height:0px;
 }
 
 #home:target{
-  width: 100%;
+  width: auto;
   opacity: 1;
+  height: auto;
 }
 
 #projects:target{
-  width: 100%;
+  width: auto;
   opacity: 1;
+  height: auto;
 }
 
 #services:target{
   width: 100%;
   opacity: 1;
+  height: auto;
 }
+
