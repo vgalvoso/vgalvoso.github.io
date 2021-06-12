@@ -261,6 +261,10 @@ input{
 
 /*#region COLORS */
 /* border-color */
+.border-primary{
+  border-color: var(--primary);
+}
+
 .border-green{
   border-color:var(--main-green);
 }
