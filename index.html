@@ -1,74 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="css/newstyle.css">
-  <link rel="stylesheet" href="css/index.css">
-  <title>Van Hudson Galvoso</title>
-</head>
-<body onload="location.href='#home'"> 
-  <div class="full-screen">
-    <section  style="background-image: url('loginbg.jpg');background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: contain;" class="center bg-white m-0" id="left_pane">
-      <div class="dim"></div>
-    </section>
-    <section class="column m-0 shrink-right spread no-scroll" id="right_pane">
-      <nav class="center mb-2">
-        <ul>
-          <li><a href="#home"><i class="material-icons">home</i>Home</a></li>
-          <li><a href="#projects"><i class="material-icons">apps</i>Projects</a></li>
-          <li><a href="#services"><i class="material-icons">build</i>Services</a></li>
-        </ul>
-      </nav>
-      <div class="tab-group">
-        <section class="column page" id="home">
-          <section  class="center padding column">
-            <a href="#about_me" class="round-right center floating-button bg-main material-icons clickable">arrow_forward_ios</a>
-            <img src="photo.png" id="my_photo" class="inline"/>
-            <h1 class="text-banner mb-2">Hi! I'm Van</h1>
-            <label class="text-subheader">I'm a software developer,</label>
-            <label class="text-subheader mb-2 center-text"> I create <a href="" class="link">websites</a>, 
-            <a href="" class="link">windows desktop apps </a>  and <a href="" class="link"> android apps.</a> </label>
-          </section>
-          <section class="center">
-            <a href="https://github.com/vgalvoso"><img src="github.png" id="my_photo" class="inline" style="width:50px"/></a>
-          </section>
-        </section>
-        <section class="column page" id="projects">
-            <section class="padding center row">
-              <div class="card smooth margin bg-white clickable">
-                <img src="department.png" alt="" class="mb-2 smooth">
-                <label class="text-subheader mb-1 center-text">Employee Record System</label>
-                <label class="center-text">Easily manage employee records.</label>
-              </div>
-              <div class="card smooth margin bg-white clickable">
-                <img src="chat.png" alt="" class="mb-2 smooth">
-                <label class="text-subheader mb-1 center-text">Project : Chat</label>
-                <label class="center-text">Messaging app for team projects.</label>
-              </div>
-            </section>
-        </section>
-        <section class="column page" id="services">
-          <section class="center column">
-            <h1 class="text-banner">Comming Soon</h1>
-          </section>
-        </section>
-      </div>
-      <section class="footer center">
-        <div class="wrap center">
-          <label class="padding white bg-primary">CONTACT ME!</label>
-          <div class="border wrap">
-            <div class="padding"><i class="material-icons">email</i><label for="">vgalvoso@gmail.com</label></div>
-            <div class="padding"><i class="material-icons">phone_android</i><label for="">0950-239-1879</label></div>
-          </div>
-          </div>
-      </section>
-    </section>
-  </div>
-  <script src="js/jscript.js"></script>
-</body>
+    <head>
+        <title> Van Hudson Galvoso </title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- jQuery library -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+
+        <script src="js/javascript.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!--<link rel="stylesheet" type="text/css" href="css/debug.css">-->
+    </head>
+    <body id="body">
+        <!-- Top Nav-->
+        <nav id="home_nav">
+            <ul class="nav_links inline">
+                <li><a href="#about_me" class="btn nav_btn active" id="aboutme_btn"> About Me </a></li>
+                <li><a href="#my_skills" class="btn nav_btn" id="skills_btn"> Skills </a></li>
+                <li><a href="#my_projects" class="btn nav_btn" id="myprojects_btn"> Portfolio </a></li>
+            </ul>
+            <ul id="soc_net" class="inline">
+                <li><a href="mailto:vgalvoso@gmail.com">vgalvoso@gmail.com</a> |</li>
+                <li><a href="tel:09502391879"> +63 950 239 1879 </a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div id="main">           
+            <div id="about_me" class="page flex">
+                <img src="res/photo.png" id="my_photo" class="inline"/>
+                <div class="inline aboutme">
+                    <h1 class="inline heading my_name">Hi, I'm Van</h1>
+                    <p> I'm a <em>web</em> and <em>software developer</em> with 3 years of industry experience
+                        in <em>web app</em>, <em>windows app</em> and <em> android development</em>.
+                    </p>
+                    <p> I occasionally make  
+                        <em>games</em>.</p>
+                        <br />
+                </div>
+            </div>
+
+            <div id="my_skills" class="page flex">   
+                <div class="full-width">
+                    <hr class="header-line page-title-item" />
+                    <h2 class="dark-gray page-title-item"> My Skills </h2>
+                    <hr class="header-line page-title-item" />
+                </div>
+                <div class="flex dot-container" >
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <a><span class="dot" onclick="goTo('skill1')"></span></a>
+                        <a><span class="dot" onclick="goTo('skill2')"></span></a>
+                        <a><span class="dot" onclick="goTo('skill3')"></span></a>
+                        <a><span class="dot" onclick="goTo('skill4')"></span></a>
+                    </div>
+                </div>
+                <div class="flex no-wrap flex-start invisible-scroll skill-container">
+                    <div class="flex flex-column card" id="skill1">
+                        <img  class="category-img" src="res/category/www.png" />
+                        <h3 class="white"> Web Development </h3>
+                        <div class="flex">
+                            <table>
+                                <tr>
+                                    <td><img class="icon" src="res/skills/html5.png" /></td>
+                                    <td><img class="icon" src="res/skills/css3.png" /></td>
+                                    <td><img class="icon" src="res/skills/js.png" /></td>
+                                    <td><img class="icon" src="res/skills/jquery.png" /></td>
+                                </tr>
+                                <tr>
+                                    <td><img class="icon" src="res/skills/json.png" /></td>
+                                    <td><img class="icon" src="res/skills/mysql.png" /></td>
+                                    <td><img class="icon" src="res/skills/codeigniter.png" /></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="flex flex-column card" id="skill2">
+                        <img  class="category-img" src="res/category/exe.png" />
+                        <h3 class="white"> Desktop App Development </h3>
+                        <div class="flex">
+                            <table>
+                                <tr>
+                                    <td><img class="icon" src="res/skills/csharp.png" /></td>
+                                    <td><img class="icon" src="res/skills/vb.net.png" /></td>
+                                    <td><img class="icon" src="res/skills/java.png" /></td>
+                                    <td><img class="icon" src="res/skills/access.png" /></td>
+                                </tr>
+                                <tr>
+                                    <td><img class="icon" src="res/skills/mssql.png" /></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="flex flex-column card" id="skill3">
+                        <img class="category-img" src="res/category/android.png" />
+                        <h3 class="white"> Mobile Development </h3>
+                        <div class="flex">
+                            <table>
+                                <tr>
+                                    <td><img class="icon" src="res/skills/android.png" /></td>
+                                    <td><img class="icon" src="res/skills/androidstudio.png" /></td>
+                                    <td><img class="icon" src="res/skills/java.png" /></td>
+                                </tr>
+                                <tr>
+                                    <td><img class="icon hidden" src="res/skills/java.png"/></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="flex flex-column card" id="skill4">
+                        <img class="category-img" src="res/category/otherskill.png" />
+                        <h3 class="white"> Other Skills </h3>
+                        <div class="flex">
+                            <table>
+                                <tr>
+                                    <td><img class="icon" src="res/skills/photoshop.png" /></td>
+                                    <td><img class="icon" src="res/skills/git.png" /></td>
+                                    <td><img class="icon" src="res/skills/github.png" /></td>
+                                </tr>
+                                <tr>
+                                    <td><img class="icon hidden" src="res/skills/java.png"/></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+             </div>
+            
+            <div id="my_projects" class="page flex">
+                <div class="full-width">
+                    <hr class="header-line page-title-item" />
+                    <h2 class="dark-gray page-title-item"> Portfolio </h2>
+                    <hr class="header-line page-title-item" />
+                </div>
+                <div class="project" id="proj1">
+                    <div class="inline projpic">
+                        <img src="res/am.png">
+                    </div>
+                    <div class="w-100">
+                        <div class="inline projdetails">
+                            <h3 class="header"> Activity Monitoring </h3>
+                            <p> Record daily activities, computaion of 
+                                man hour utilization rate and HR basis for attendance penalties.
+                            </p>
+                            <div class="tags">
+                                <label> php </label>
+                                <label> html </label>
+                                <label> css </label>
+                                <label> javascript </label>
+                                <label> jquery </label>
+                            </div>
+                            <br />
+                            <button class="showmore_btn" onclick="showModal(1)" id="smbtn1"> 
+                                <span class="text">Show more</span> 
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project" id="proj2">
+                    <div class="inline projpic">
+                        <img src="res/timed2.png">
+                    </div>
+                    <div class="w-100">
+                        <div class="inline projdetails">
+                            <h3 class="header"> Timed </h3>
+                            <p> Create project calendar, assign schedule to team members
+                                and track project status.
+                            </p>
+                            <div class="tags">
+                                <label> php </label>
+                                <label> html </label>
+                                <label> css </label>
+                                <label> javascript </label>
+                                <label> jquery </label>
+                            </div>
+                            <br />
+                            <button class="showmore_btn" onclick="showModal(2)" id="smbtn2">
+                                <span class="text">Show more</span> 
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project" id="proj3">
+                    <div class="inline projpic">
+                        <img src="res/ticketing.png">
+                    </div>
+                    <div class="w-100">
+                        <div class="inline projdetails">
+                            <h3 class="header"> Ticketing System </h3>
+                            <p> Handle internal requests to every department in the company.</p>
+                            <div class="tags">
+                                <label> php </label>
+                                <label> html </label>
+                                <label> css </label>
+                                <label> javascript </label>
+                                <label> jquery </label>
+                            </div>
+                            <br />
+                            <button class="showmore_btn" onclick="showModal(3)" id="smbtn3">
+                                <span class="text">Show more</span> 
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project" id="proj4">
+                    <div class="inline projpic">
+                        <img src="res/department.png">
+                    </div>
+                    <div class="w-100">
+                        <div class="inline projdetails">
+                            <h3 class="header"> Employee Record System </h3>
+                            <p> Manage employee record with ease.</p>
+                            <div class="tags">
+                                <label> codeigniter4 </label>
+                                <label> php </label>
+                                <label> html </label>
+                                <label> css </label>
+                                <label> javascript </label>
+                                <label> jquery </label>
+                            </div>
+                            <br />
+                            <button class="showmore_btn" onclick="showModal(3)" id="smbtn3">
+                                <span class="text">Show more</span> 
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+
+        <!-- Footer -->
+        <label class="flex">
+            <label> &copy; 2020 | Van Hudson Galvoso </label>
+        </label>
+        <br />
+
+        <!-- Side Nav (responsive)-->
+        <div id="side_nav">
+            <div class="hamburger-menu" onclick="menuClicked(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="side-drawer">
+                <ul id="drawer_links" class="block">
+                    <li><a href="#about_me" class="btn nav_btn active"> About Me </a></li>
+                    <li><a href="#my_skills" class="btn nav_btn"> Skills </a></li>
+                    <li><a href="#my_projects" class="btn nav_btn"> My Projects </a></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li><a href="mailto:vgalvoso@gmail.com">vgalvoso@gmail.com</a> |</li>
+                    <li><a href="tel:09502391879"> +63 950 239 1879 </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- MODALS -->
+        <div class="modal-bg">
+        </div>
+        <!-- Project Modal -->
+        <div class="modal flex-left flex-row flex-start">
+            <label class="hidden" id="project_id"></label>
+            <button class="modal-close-btn btn white" onclick="closeModal()">X</button>
+            <h1 class="modal-title white" id="project_title"> Activity Monitoring </h1>
+            <p class="modal-subtitle" id="project_description"> Web application developed for a construction company 
+                as IT Programmer. </p>
+            <img class="modal-img" id="project_img" src="res/am.png" />
+            <div class="flex" >
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <a><span class="dot" onclick="showPic(0)"></span></a>
+                    <a><span class="dot" onclick="showPic(1)"></span></a>
+                    <a><span class="dot" onclick="showPic(2)"></span></a>
+                    <a><span class="dot" onclick="showPic(3)"></span></a>
+                </div>
+            </div>
+            <div class="modal-content full-width">
+                <h2 class="modal-content-title"> Story </h2>
+                <hr class="w-50 left border-red"/>
+                <content class="modal-content">
+                    <p id="project_story"> Sample content. </p>
+                </content>
+            </div>
+            <div class="modal-content full-width">
+                <h2 class="modal-content-title"> Used Technologies </h2>
+                <hr class="w-50 left border-red"/>
+                <content class="modal-content">
+                    <ul class="button-list" id="project_techs">
+                        <li> - PHP </li>
+                        <li> - HTML5 </li>
+                        <li> - CSS3 </li>
+                        <li> - Javacript </li>
+                        <li> - JQuery </li>
+                        <li> - Ajax </li>
+                    </ul>
+                </content>
+            </div>
+        </div>
+    </body>
 </html>

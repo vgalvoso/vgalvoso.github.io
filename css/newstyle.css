@@ -32,6 +32,7 @@
 
 html{
   scroll-behavior:smooth;
+  word-break: normal;
 }
 html *{
   letter-spacing: 0.7px;
@@ -47,6 +48,7 @@ body{
   color:var(--main-font-color);
   overflow-y:auto;
   overflow-x:hidden;
+  word-break: normal;
 }
 em{
   font-weight:bold;
@@ -75,11 +77,10 @@ ul li{
 /*#region NAVBAR */
 nav{
   width: 100%;
-  padding: 0 14px;
+  padding: 0px;
   top:0px;
   left:0px;
   height:64px;
-  position:sticky;
   display: flex;
   justify-content: space-between;
   box-shadow:0px 1px 2px 0px #cccccc;
