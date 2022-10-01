@@ -520,6 +520,7 @@ nav{
   justify-content: space-between;
   box-shadow:0px 1px 2px 0px #cccccc;
   background-color:var(--main-bg-color);
+  z-index:100;
 }
 nav > *{
   display:flex;
@@ -628,6 +629,11 @@ nav ul li > * {
 
 .scroll-x{
   overflow-x: auto;
+}
+
+.fixed-footer{
+  position:fixed;
+  bottom:0;
 }
 
 @media only screen and (max-width:600px){
